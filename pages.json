@@ -1,0 +1,67 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/login/login",
+			"style": {}
+		},
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "uni-app",
+				"app-plus": {
+					"scrollIndicator": "none", //隐藏滚动条
+					"titleNView": {
+						"searchInput": {
+							"align": "center",
+							"backgroundColor": "#f7f7f7",
+							"borderRadius": "4px",
+							"placeholder": "搜索",
+							"disabled": true
+						},
+						"buttons": [{
+								"color": "#007AFF",
+								"float": "left",
+								"text": "分享",
+								"fontSize": "12px"
+
+							},
+							{
+								"color": "#007AFF",
+								"float": "right",
+								"text": "设置",
+								"fontSize": "12px"
+							}
+						]
+					}
+				}
+
+			}
+		}, {
+			"path": "pages/test/test",
+			"style": {}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "测试项目",
+		"navigationBarBackgroundColor": "#ffffff",
+		"backgroundColor": "#ffffff"
+	},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#3cc51f",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+			"pagePath": "pages/index/index",
+			"iconPath": "static/logo.png",
+			"selectedIconPath": "static/logo.png",
+			"text": "首页"
+		}, {
+			"pagePath": "pages/test/test",
+			"iconPath": "static/logo.png",
+			"selectedIconPath": "static/logo.png",
+			"text": "测试"
+		}]
+	}
+}
